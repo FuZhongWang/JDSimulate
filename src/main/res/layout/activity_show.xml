@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.p7xxtm1_g.jdsimulate.view.activity.ShowActivity">
+ <FrameLayout
+     android:id="@+id/fragment"
+     android:layout_weight="9"
+     android:layout_width="match_parent"
+     android:layout_height="0dp">
+
+ </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shouye"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            />
+        <TextView
+            android:id="@+id/fenlei"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            />
+        <TextView
+            android:id="@+id/faxian"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            />
+        <TextView
+            android:id="@+id/gouwuche"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            />
+        <TextView
+            android:id="@+id/wode"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            />
+
+    </LinearLayout>
+</LinearLayout>

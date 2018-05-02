@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+                <LinearLayout
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="56dp">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scan"
+                        android:drawableTop="@drawable/sao_hei"
+                        />
+                    <EditText
+                        android:id="@+id/seek"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="295dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/seekstring"
+                        android:background="@drawable/seek_edittext"
+                        android:drawableLeft="@drawable/a_4"
+                        android:drawableRight="@drawable/root"
+                        />
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/message"
+                        android:drawableTop="@drawable/my_msg_hei"
+                        />
+                    >
+                </LinearLayout>
+
+            </RelativeLayout>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"></android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="380dp"
+                android:layout_height="45dp"></LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="倒计时:"
+                    />
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:text="02"
+                    android:textColor="#fff"
+                    />
+                <TextView
+                    android:textColor="#808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    />
+                <TextView
+                    android:id="@+id/minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:text="59"
+                    android:textColor="#fff"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#808080"
+                    />
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000"
+                    android:text="59"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/seckill"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"></android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/guess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
